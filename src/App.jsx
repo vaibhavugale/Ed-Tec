@@ -36,6 +36,7 @@ import { getUserDetails } from "./services/operations/profileAPI"
 import { ACCOUNT_TYPE } from "./utils/constants"
 
 function App() {
+  console.log("RAZORYPAY key",process.env.REACT_APP_RAZORPAY_KEY)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const { user } = useSelector((state) => state.profile)
